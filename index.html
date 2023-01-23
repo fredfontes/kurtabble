@@ -91,5 +91,23 @@
 		</table>
 	</center>
     <ul id="listen-on"><li><a href="" target="_blank"><img src="imgs/listen-on-spotify-badge.png"></a></li></ul>
+
+<!--
+	<script src="https://open.spotify.com/embed-podcast/iframe-api/v1" async></script>
+
+	<div id="embed-iframe"></div>
+	<script>
+		window.onSpotifyIframeApiReady = (IFrameAPI) => {
+		let element = document.getElementById('embed-iframe');
+		let options = {
+			width: "764",
+			height: "388",
+			uri: 'spotify:artist:4dh116knGBmTiKg4wLWXK1:album:3E9OI2ZFoItlYWyorS9E6x'
+			};
+		let callback = (EmbedController) => {};
+		IFrameAPI.createController(element, options, callback);
+		};
+	</script>
+-->
 </body>
 </html>
