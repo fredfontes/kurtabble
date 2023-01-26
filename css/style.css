@@ -77,6 +77,29 @@ ul li li { font-size:small; }
 
 aside { float:right; }
 
+#collection {
+    padding:0; margin:0; 
+    list-style:none;
+}
+#collection span {
+    clear:both;
+}
+#collection li { display:inline-block; }
+#collection p { padding:12px 16px; margin:0; }
+#collection a {
+    display:block;
+    max-width:244px;
+    max-height:212px;
+    overflow:hidden;
+    border-radius:8px;
+    border:2px solid #D80303;
+    background-color:#D80303;
+    padding:0; margin:0;
+}
+#collection a:hover { border:2px solid #eee; }
+#collection img { width:100%; }
+
+
 #listen-on { width: 100%; max-width: 800px; margin: 48px auto; }
 #listen-on li { list-style: none; display: inline-block; }
 #listen-on img { height: 48px; }
