@@ -89,7 +89,7 @@ aside { float:right; }
 #collection a {
     display:block;
     max-width:244px;
-    max-height:212px;
+    max-height:200px;
     overflow:hidden;
     border-radius:8px;
     border:2px solid #D80303;
