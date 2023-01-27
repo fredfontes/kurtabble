@@ -188,6 +188,13 @@ footer h6 {
 
     button { width: 100%; margin-top:24px; }
 
+    #collection li:first-child { margin-top:0; }
+    #collection li { margin-top:24px; }
+    #collection a { 
+        max-width: 100%; 
+        max-height: 216px;
+    }
+
     #oldschool { 
         overflow-x:hidden; 
         margin:-24px -24px 24px -24px;
