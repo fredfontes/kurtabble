@@ -4,11 +4,14 @@ body,td,th {
     color:#eee;
 }
 body {
-    background-color: #000000;
+    background-color: #191919;
     margin-left: 0px;
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
+}
+body.home {
+    overflow-x: hidden; background-color:black;
 }
 a:link {
     color: #ffffff;
@@ -37,10 +40,7 @@ header, section, footer {
     margin: 0 auto;
 }
 
-header {
-    background-image: url(../../../imgs/topo.gif); 
-
-}
+header { background-image: url(../../../imgs/topo.gif); }
 header img { width: 100%; height:100px; }
 
 footer { margin-top:24px; }
@@ -118,21 +118,104 @@ aside { float:right; }
 #collection a:hover { border:2px solid #920000; background-color:#920000; color:white; }
 #collection img { width:100%; }
 
+table, #spotify {
+    overflow:hidden;
+    max-width:764px;
+}
+#spotify { 
+    position: absolute;
+    top:61px;
+    width:764px; height:371px;
+    margin-left:-382px;
+    left:50vw;
+    opacity:0.8; 
+    border-radius:12px;
+}
 
-#listen-on { width: 100%; max-width: 800px; margin: 48px auto; }
-#listen-on li { list-style: none; display: inline-block; }
-#listen-on img { height: 48px; }
+#footer { padding:0; width: 100%;}
+#footer img { height: 48px; }
+#footer li { 
+    list-style: none; 
+    display: inline-block; 
+    line-height:0; 
+    margin:0;
+    padding:0;
+}
+#footer li a { 
+    color: white;
+    border: 1px solid #979797;
+    border-radius:8px;
+    margin-left:24px;
+    padding: 13.5px 20px;
+    position:relative;
+    top:-20px;
+}
+#footer li a:hover {
+    color: white;
+    border:1px solid white;
+}
+#footer li a.spotify { 
+    border:none; 
+    margin:0; 
+    padding:0;
+    position:inherit;
+}
 
-#spotify { width: 764px; height: 388px; margin: -118px -34px 0 -34px; opacity:0.8; }
+footer h6 {
+    color: #666;
+    text-align: center; 
+    font-size: x-small;
+    font-weight: 900;
+}
+.home footer h6 { 
+    border-top: 1px dashed #222; padding-top:16px; 
+}
 
 @media only screen and (max-width: 768px) {
     header { width: 100%; background-position-x: right; }
     header img { height:72px; }
+    header.home img { height: 96px; }
+
     section { width: calc(100% - 48px); padding:0 24px; }
+
     h3 { margin-bottom: 24px; }
+
     footer { width: 100%; }
     footer ul li:last-child { display:none; }
+
     picture { float:none; margin: 0; }
     picture img { width: 100%; }
+
     button { width: 100%; margin-top:24px; }
+
+    #oldschool { 
+        overflow-x:hidden; 
+        margin:-24px -24px 24px -24px;
+        float:right;
+    }
+    #spotify { 
+        top:61px;
+        left:0;
+        margin:0;
+        width:100%; height:367px;
+        border-radius: 0;
+    }
+
+    #footer li a.spotify { 
+        margin-bottom: 24px;
+    }
+    #footer img { width: 100%; height:auto; }
+
+    #footer li { 
+        display:block; 
+        width:100%; 
+        line-height:unset;
+    }
+    #footer li a {
+        position:inherit;
+        margin:0 0 24px 0;
+        width:calc(100%-48px);
+        display:block;
+        line-height:unset;
+    }
  }
